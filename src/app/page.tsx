@@ -35,7 +35,7 @@ export default function Home() {
         <p className="text-center py-6 uppercase tracking-[0.2rem] text-neon-green text-[12px]">advice #{loading ? <Skeleton baseColor="#333333" highlightColor="hsl(217, 19%, 24%)" className="w-[10px] h-[10px] bg-gray-500" style={{ background: "none" }} /> : messages.id}</p>
 
         {loading ? <Skeleton baseColor="#333333" highlightColor="hsl(217, 19%, 24%)" className="h-[80px] bg-gray-500" count={1} style={{ background: "none" }} /> :
-          <p className="text-center text-[24px] mb-4 px-4">{messages.advice}</p>
+          <h1 className="text-center text-[24px] mb-4 px-4">{messages.advice}</h1>
         }
 
         <div className="flex justify-center items-center w-full h-[60px]">
